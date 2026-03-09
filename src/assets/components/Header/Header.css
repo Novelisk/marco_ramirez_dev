@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+  padding: 0 128px 0 128px;
+}
+
+.name {
+  display: flex;
+  margin: 0;
+  gap: 8px;
+}
+
+.name__span {
+  font-family:
+    IBM Plex,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #12f7d6;
+}
+
+.name__paragraph {
+  margin: 0;
+  font-family:
+    IBM Plex,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__container {
+  display: flex;
+  gap: 32px;
+}
+
+.navlink {
+  font-family:
+    IBM Plex,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navlink__active {
+  font-family:
+    IBM Plex,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #12f7d6;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  display: flex;
+  gap: 8px;
+}
+
+.link__icon {
+  width: 20px;
+  height: 20px;
+  color: #12f7d6;
+}
+
+.link__text {
+  font-family:
+    IBM Plex,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
