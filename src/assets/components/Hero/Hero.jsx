@@ -19,7 +19,7 @@ export const Hero = () => {
               <div className="hero-info__header">
                 <img
                   className="hero-info__portrait"
-                  src="https://avatars.githubusercontent.com/u/105441933?v=4"
+                  src="https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/hero-portrait.png"
                   alt="Profile Picture"
                 ></img>
                 <div className="hero-info__name-container">

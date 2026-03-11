@@ -1,0 +1,121 @@
+.about {
+  padding: 128px;
+  gap: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/about-background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-header__image {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  padding: 0 64px 0 128px;
+  gap: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content__container {
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.about-content__about-me {
+  width: 367px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  background-color: #292f36;
+  border-radius: 42px 0 42px 0;
+  border: solid 4px #12f7d6;
+}
+
+.about-content__about-me_text {
+  font-family: 'Ubuntu', system-ui, Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.about-content__description {
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px;
+  gap: 16px;
+  background-color: #292f36;
+  border-radius: 40px;
+}
+
+.about-content__description_element {
+  font-family:
+    IBM Plex,
+    system-ui,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #98faec;
+}
+
+.about-content__description_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.about-content__title {
+  font-family:
+    IBM Plex,
+    system-ui,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #12f7d6;
+}
+
+.about-content__paragraph {
+  font-family:
+    IBM Plex,
+    system-ui,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.about-content__paragraph_span {
+  color: #12f7d6;
+}
+
+.about-content__image {
+  width: 462px;
+  height: 556px;
+  border-radius: 16px;
+
+  background-image: url('https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/about-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
