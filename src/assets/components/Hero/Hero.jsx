@@ -87,7 +87,6 @@ export const Hero = () => {
             <a
               className="hero-info__download"
               href="/cv-marco-r.pdf"
-              download
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -101,45 +100,49 @@ export const Hero = () => {
           </aside>
 
           <div className="hero-dev">
-            <div className="hero-dev__header">
-              <p className="hero-dev__header-element">{'<h1>'}</p>
-              <div className="hero-dev__header-content">
-                <h2 className="hero-dev__header-text">Hey</h2>
-                <h2 className="hero-dev__header-text">
-                  I'm <span className="hero-dev__header-span">Marco</span>
-                </h2>
-                <h2 className="hero-dev__header-text">
-                  Full-Stack Developer{' '}
-                  <span className="hero-dev__header-text-span">{'</h1>'}</span>
-                </h2>
+            <div className="hero-dev-container">
+              <div className="hero-dev__header">
+                <p className="hero-dev__header-element">{'<h1>'}</p>
+                <div className="hero-dev__header-content">
+                  <h2 className="hero-dev__header-text">Hey</h2>
+                  <h2 className="hero-dev__header-text">
+                    I'm <span className="hero-dev__header-span">Marco</span>
+                  </h2>
+                  <h2 className="hero-dev__header-text">
+                    Full-Stack Developer{' '}
+                    <span className="hero-dev__header-text-span">
+                      {'</h1>'}
+                    </span>
+                  </h2>
+                </div>
               </div>
-            </div>
 
-            <div className="hero-dev__footer">
-              <p className="hero-dev__footer-element">{'<p>'}</p>
-              <div className="hero-dev__footer-content">
-                <p className="hero-dev__footer-text">
-                  I'm a passionate full-stack developer with experience in
-                  building modern web applications. If you're looking for a
-                  developer that likes get stuff done,
-                </p>
+              <div className="hero-dev__footer">
+                <p className="hero-dev__footer-element">{'<p>'}</p>
+                <div className="hero-dev__footer-content">
+                  <p className="hero-dev__footer-text">
+                    I'm a passionate full-stack developer with experience in
+                    building modern web applications. If you're looking for a
+                    developer that likes get stuff done,
+                  </p>
+                </div>
+                <p className="hero-dev__footer-element">{'<p>'}</p>
+                <a
+                  href="mailto:marco@email.com?subject=Project%20Inquiry"
+                  className="hero-dev__contact"
+                >
+                  <h2 className="hero-dev__contact-text">
+                    Let's talk!
+                    <div className="hero-dev__contact-icon-container">
+                      <img
+                        src={emailIcon}
+                        alt="Email icon"
+                        className="hero-dev__contact-icon"
+                      />
+                    </div>
+                  </h2>
+                </a>
               </div>
-              <p className="hero-dev__footer-element">{'<p>'}</p>
-              <a
-                href="mailto:marco@email.com?subject=Project%20Inquiry"
-                className="hero-dev__contact"
-              >
-                <h2 className="hero-dev__contact-text">
-                  Let's talk!
-                  <div className="hero-de__contact-icon-container">
-                    <img
-                      src={emailIcon}
-                      alt="Email icon"
-                      className="hero-dev__contact-icon"
-                    />
-                  </div>
-                </h2>
-              </a>
             </div>
 
             <div className="hero-highlights">

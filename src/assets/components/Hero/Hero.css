@@ -1,7 +1,7 @@
 .top-line {
   margin: 0 128px;
   height: 1px;
-  background-color: #333;
+  background-color: #43454d;
   margin-bottom: 64px;
 }
 
@@ -34,7 +34,7 @@
   margin-left: 128px;
   border: 4px solid #fff;
   border-radius: 100px 0 100px 0;
-  box-shadow: -5px -5px 0 0 rgba(18, 247, 214, 1);
+  box-shadow: -5px -5px 0 0 rgba(18, 247, 214, 0.8);
   gap: 32px;
 }
 
@@ -157,6 +157,11 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.hero-info__download:hover {
+  transform: translateY(-2px);
 }
 
 .hero-info__download-text {
@@ -175,12 +180,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+}
+
+.hero-dev__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-dev__header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .hero-dev__header-element,
@@ -245,9 +255,20 @@
 }
 
 .hero-dev__contact {
+  width: fit-content;
   padding-left: 24px;
   gap: 16px;
   display: flex;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-dev__contact:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .hero-dev__contact-text {
@@ -260,14 +281,20 @@
   font-weight: 600;
   line-height: 1.3;
   color: #12f7d6;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .hero-dev__contact-icon-container {
-  width: auto;
-  height: auto;
+  width: 32px;
+  height: 32px;
   padding: 8px 8px;
   background-color: #43454d;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-dev__contact-icon {
@@ -278,6 +305,7 @@
 .hero-highlights {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
   padding: 48px 32px;
   border-radius: 80px;
@@ -286,6 +314,8 @@
 
 .hero-highlights__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
