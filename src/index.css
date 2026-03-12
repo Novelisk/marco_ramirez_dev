@@ -2,18 +2,13 @@
 @import url('./assets/components/SearchBar/SearchBar.css');
 @import url('./assets/components/Hero/Hero.css');
 @import url('./assets/components/About/About.css');
+@import url('./assets/components/Skills/Skills.css');
 
 body {
   max-width: 1920px;
   margin: 0 auto;
 
-  font-family:
-    IBM Plex,
-    Ubuntu,
-    system-ui,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: 'IBM Plex', 'Ubuntu', system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
