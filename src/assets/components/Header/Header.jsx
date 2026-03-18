@@ -43,21 +43,27 @@ export const Header = () => {
               alt="LinkedIn icon"
               className="link__icon"
             />
-            <a href="http://example.com" className="link__text">
+            <a
+              href="https://www.linkedin.com/in/paulramirezdev"
+              className="link__text"
+            >
               LinkedIn
             </a>
           </div>
 
           <div className="link">
             <img src={discordIcon} alt="Discord icon" className="link__icon" />
-            <a href="http://example.com" className="link__text">
+            <a
+              href="https://discord.com/invite/SE5mWf7T"
+              className="link__text"
+            >
               Discord
             </a>
           </div>
 
           <div className="link">
             <img src={githubIcon} alt="Github icon" className="link__icon" />
-            <a href="http://example.com" className="link__text">
+            <a href="https://github.com/Novelisk" className="link__text">
               Github
             </a>
           </div>

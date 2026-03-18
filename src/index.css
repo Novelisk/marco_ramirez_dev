@@ -4,6 +4,7 @@
 @import url('./assets/components/About/About.css');
 @import url('./assets/components/Skills/Skills.css');
 @import url('./assets/components/Contact/Contact.css');
+@import url('./assets/components/Footer/Footer.css');
 
 body {
   max-width: 1920px;

@@ -1,0 +1,61 @@
+.footer__line {
+  height: 1px;
+  background-color: #43454d;
+  padding: 0 128px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 0 128px;
+  margin-bottom: 16px;
+  gap: 16px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-copyright,
+.footer-policy__text,
+.footer-contact {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.footer-policy,
+.footer-media {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-media__link {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+
+  background-color: #98faec;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-media__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-contact__mail-to {
+  text-decoration: none;
+}
+
+.footer-contact__span {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #12f7d6;
+}
