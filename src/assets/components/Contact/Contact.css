@@ -1,0 +1,155 @@
+.contact {
+  padding: 64px 0 16px 0;
+  gap: 64px;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 102px;
+}
+
+.contact__header,
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.contact__header-image {
+  width: 32px;
+  height: 140px;
+}
+
+.contact__header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contact__header-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 16px;
+
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #12f7d6;
+}
+
+.contact__header-paragraph {
+  font-family: 'IBM Plex', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+/* contact__content already styled */
+
+.contact__content-title-container {
+  padding: 16px 40px;
+  border: 2px solid #12f7d6;
+  border-radius: 22px 0 22px 0;
+}
+
+.contact__content-title {
+  font-family: 'IBM Plex', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #12f7d6;
+}
+
+.contact__content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contact__form-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 128px;
+}
+
+.contact__form-name,
+.contact__form-email {
+  display: flex;
+  flex-direction: column;
+  width: 496px;
+  gap: 24px;
+}
+
+.contact__form-message {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact__form-label {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #12f7d6;
+}
+
+.contact__form-input {
+  border: none;
+  border-bottom: solid 1px #98faec;
+  outline: none;
+  background-color: transparent;
+  caret-color: #98faec;
+  padding: 0 0 8px 0;
+
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.contact__form-input::placeholder,
+.contact__form-text-area::placeholder {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+  opacity: 50%;
+  padding-bottom: 8px;
+}
+
+.contact__form-input:focus::placeholder,
+.contact__form-text-area:focus::placeholder {
+  color: transparent;
+}
+
+.contact__form-submit {
+  margin: auto;
+  padding: 16px 32px;
+  gap: 16px;
+  border-radius: 32px;
+  background-color: #12f7d6;
+
+  display: flex;
+  align-items: center;
+}
+
+.contact__form-submit-span {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #292f36;
+}
+
+.contact__form-submit-icon,
+.contact__form-check-icon,
+.contact__form-cross-icon {
+  width: 24px;
+  height: 24px;
+}

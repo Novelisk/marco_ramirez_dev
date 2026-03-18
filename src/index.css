@@ -3,6 +3,7 @@
 @import url('./assets/components/Hero/Hero.css');
 @import url('./assets/components/About/About.css');
 @import url('./assets/components/Skills/Skills.css');
+@import url('./assets/components/Contact/Contact.css');
 
 body {
   max-width: 1920px;
