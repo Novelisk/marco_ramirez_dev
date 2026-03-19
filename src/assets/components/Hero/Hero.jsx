@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <>
       <div className="top-line"></div>
-      <div className="hero">
+      <section className="hero">
         <h1 className="hero__title">Developer</h1>
 
         <div className="hero__content">
@@ -161,7 +161,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

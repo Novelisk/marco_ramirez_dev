@@ -1,0 +1,97 @@
+.nav-bar {
+  position: fixed;
+  top: 234px;
+  left: 64px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  gap: 24px;
+  border: solid 1px #fff;
+  border-radius: 45px;
+
+  background-color: #1a1e23;
+}
+
+.nav-bar__default {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.nav-bar__image {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-bar__item {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+}
+
+.nav-bar__text-container {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 8px;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+  white-space: nowrap;
+
+  opacity: 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-bar__text-container.visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.nav-bar__text {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell;
+
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.1;
+  color: #292f36;
+}

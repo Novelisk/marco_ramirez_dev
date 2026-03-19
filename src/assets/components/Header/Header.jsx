@@ -8,7 +8,7 @@ import { SearchBar } from '../SearchBar/SearchBar';
 
 export const Header = () => {
   return (
-    <div className="header">
+    <header className="header" id="home">
       <div className="name">
         <span className="name__span">{`<C/>`}</span>
         <p className="name__paragraph">Marco Ramirez</p>
@@ -69,6 +69,6 @@ export const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };

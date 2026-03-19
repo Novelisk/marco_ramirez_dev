@@ -10,7 +10,7 @@ import reactIcon from '../../images/icons/react-icon.svg';
 
 export const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="skills-content">
         <div className="skills-content__header">
           <img

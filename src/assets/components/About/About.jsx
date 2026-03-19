@@ -4,7 +4,7 @@ import scrollIcon from '../../images/icons/scroll-icon.svg';
 
 export const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-header">
         <img
           src={scrollIcon}

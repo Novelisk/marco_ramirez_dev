@@ -5,15 +5,18 @@ import { About } from '../../components/About/About';
 import { Skills } from '../../components/Skills/Skills';
 import { Contact } from '../../components/Contact/Contact';
 import { Footer } from '../../components/Footer/Footer';
+import { NavBar } from '../../components/NavBar/NavBar';
 
 export const Main = () => {
   return (
-    <div className="main">
+    <main className="main">
       <Hero />
       <About />
       <Skills />
       <Contact />
       <Footer />
-    </div>
+
+      <NavBar />
+    </main>
   );
 };
