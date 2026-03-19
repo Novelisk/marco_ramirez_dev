@@ -31,6 +31,11 @@
   gap: 32px;
 }
 
+.footer-copyright:hover,
+.footer-policy__text:hover {
+  opacity: 70%;
+}
+
 .footer-media__link {
   width: 32px;
   height: 32px;
@@ -42,15 +47,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: transform 0.2s cubic-bezier(0.22, 1.56, 0.64, 1);
+}
+
+.footer-media__link:hover {
+  transform: translateY(-6px) scale(1.15);
 }
 
 .footer-media__icon {
   width: 24px;
   height: 24px;
+
+  transition: transform 0.2s cubic-bezier(0.22, 1.56, 0.64, 1);
+}
+
+.footer-media__icon:hover {
+  transform: translateY(-6px) scale(1.15);
 }
 
 .footer-contact__mail-to {
   text-decoration: none;
+}
+
+.footer-contact__mail-to:hover {
+  opacity: 70%;
 }
 
 .footer-contact__span {

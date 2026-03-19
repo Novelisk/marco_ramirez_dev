@@ -15,10 +15,18 @@ export const Footer = () => {
         </h4>
 
         <nav className="footer-policy">
-          <NavLink to="/policy" className="footer-policy__text">
+          <NavLink
+            to="/policy"
+            className="footer-policy__text"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             Privacy Policy
           </NavLink>
-          <NavLink to="/terms" className="footer-policy__text">
+          <NavLink
+            to="/terms"
+            className="footer-policy__text"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             Terms & Conditions
           </NavLink>
         </nav>

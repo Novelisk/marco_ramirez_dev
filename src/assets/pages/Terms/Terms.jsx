@@ -1,19 +1,13 @@
 import React from 'react';
 
-import { Header } from '../../components/Header/Header';
-import { Footer } from '../../components/Footer/Footer';
-
 export const Terms = () => {
   return (
     <>
-      <Header />
-
       <div className="top-line"></div>
-
       <div className="terms">
         <div className="terms__header">
           <h1 className="terms__title">Terms & Conditions</h1>
-          <p className="terms__paragraph">Last updated: 03/19/2026.</p>
+          <p className="terms__paragraph">Last updated: 03/19/2026</p>
         </div>
         <div className="terms__content">
           <h2 className="terms__subtitle">1.- Acceptance of Terms</h2>

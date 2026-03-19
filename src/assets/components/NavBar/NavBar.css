@@ -47,6 +47,13 @@
   justify-content: center;
 
   padding: 4px;
+
+  transition: transform 0.15 ease;
+}
+
+.nav-bar__item:hover .nav-bar__image {
+  opacity: 0.7;
+  transform: translateY(2px);
 }
 
 .nav-bar__text-container {
@@ -67,7 +74,7 @@
 
   opacity: 0;
   transition:
-    opacity 0.25s ease,
+    opacity 0.1s ease,
     transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 
   background-color: #fff;

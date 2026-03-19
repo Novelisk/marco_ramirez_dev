@@ -9,12 +9,12 @@ import { SearchBar } from '../SearchBar/SearchBar';
 export const Header = () => {
   return (
     <header className="header" id="home">
-      <div className="name">
+      <div className="header__name">
         <span className="name__span">{`<C/>`}</span>
         <p className="name__paragraph">Marco Ramirez</p>
       </div>
 
-      <nav className="navbar">
+      <nav className="header__navbar">
         <div className="navbar__container">
           <NavLink
             to="/"
@@ -36,7 +36,7 @@ export const Header = () => {
 
         <SearchBar />
 
-        <div className="links">
+        <div className="header__links">
           <div className="link">
             <img
               src={linkedInIcon}
