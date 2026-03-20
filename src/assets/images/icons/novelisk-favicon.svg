@@ -1,0 +1,26 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12f7d6"></stop>
+      <stop offset="100%" stop-color="#0ea5a5"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" rx="40" fill="#0f172a"></rect>
+
+  <!-- Code symbols -->
+  <path d="M70 100 L50 128 L70 156" stroke="#12f7d6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <path d="M186 100 L206 128 L186 156" stroke="#12f7d6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- Pen stroke (abstract N-like flow) -->
+  <path d="M90 160 
+           C110 80, 150 80, 170 160" stroke="url(#grad)" stroke-width="10" fill="none" stroke-linecap="round"></path>
+
+  <!-- Pen tip -->
+  <circle cx="170" cy="160" r="5" fill="#12f7d6"></circle>
+
+  <!-- Slash (code center) -->
+  <path d="M130 90 L110 170" stroke="#12f7d6" stroke-width="6" stroke-linecap="round"></path>
+</svg>

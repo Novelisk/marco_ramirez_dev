@@ -35,6 +35,8 @@ export const Footer = () => {
           <a
             href="https://www.linkedin.com/in/paulramirezdev"
             className="footer-media__link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={linkedInIconBlack}
@@ -46,6 +48,8 @@ export const Footer = () => {
           <a
             href="https://discord.com/invite/SE5mWf7T"
             className="footer-media__link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={discordIconBlack}
@@ -54,7 +58,12 @@ export const Footer = () => {
             />
           </a>
 
-          <a href="https://github.com/Novelisk" className="footer-media__link">
+          <a
+            href="https://github.com/Novelisk"
+            className="footer-media__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={githubIconBlack}
               alt="Github icon"

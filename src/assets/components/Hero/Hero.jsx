@@ -148,7 +148,7 @@ export const Hero = () => {
             <div className="hero-highlights">
               <div className="hero-highlights__container">
                 <h2 className="hero-highlights__number">4</h2>
-                <p className="hero-highlights__text">Programming Language</p>
+                <p className="hero-highlights__text">Programming Languages</p>
               </div>
               <div className="hero-highlights__container">
                 <h2 className="hero-highlights__number">6</h2>
@@ -156,7 +156,7 @@ export const Hero = () => {
               </div>
               <div className="hero-highlights__container">
                 <h2 className="hero-highlights__number">5</h2>
-                <p className="hero-highlights__text">Frameworks</p>
+                <p className="hero-highlights__text">Coding Frameworks</p>
               </div>
             </div>
           </div>

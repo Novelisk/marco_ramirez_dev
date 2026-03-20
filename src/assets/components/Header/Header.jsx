@@ -46,6 +46,8 @@ export const Header = () => {
             <a
               href="https://www.linkedin.com/in/paulramirezdev"
               className="link__text"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
@@ -56,6 +58,8 @@ export const Header = () => {
             <a
               href="https://discord.com/invite/SE5mWf7T"
               className="link__text"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Discord
             </a>
@@ -63,7 +67,12 @@ export const Header = () => {
 
           <div className="link">
             <img src={githubIcon} alt="Github icon" className="link__icon" />
-            <a href="https://github.com/Novelisk" className="link__text">
+            <a
+              href="https://github.com/Novelisk"
+              className="link__text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Github
             </a>
           </div>
