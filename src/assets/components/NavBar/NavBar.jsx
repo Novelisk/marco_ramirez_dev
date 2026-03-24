@@ -33,8 +33,10 @@ export const NavBar = () => {
   };
 
   useEffect(() => {
+    const timeouts = timeoutRef.current;
+
     return () => {
-      Object.values(timeoutRef.current).forEach(clearTimeout);
+      Object.values(timeouts).forEach(clearTimeout);
     };
   }, []);
 

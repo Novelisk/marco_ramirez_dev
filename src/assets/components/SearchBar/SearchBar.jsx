@@ -34,7 +34,7 @@ const makeSnippet = (text, matchIndex, query) => {
   );
 };
 
-const findMatches = (query, root, ignoreRoot) => {
+const findMatches = (query, root) => {
   if (!query) return [];
   const normalizedQuery = normalizeText(query);
   const regex = new RegExp(escapeRegExp(normalizedQuery), 'i');
@@ -47,7 +47,7 @@ const findMatches = (query, root, ignoreRoot) => {
         const parent = node.parentElement;
         if (!parent) return NodeFilter.FILTER_REJECT;
 
-        if (ignoreRoot && ignoreRoot.contains(parent))
+        if (parent.closest('.searchbar'))
           return NodeFilter.FILTER_REJECT;
         if (
           parent.matches &&
@@ -88,24 +88,49 @@ const findMatches = (query, root, ignoreRoot) => {
 
 export const SearchBar = () => {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const inputRef = useRef(null);
   const containerRef = useRef(null);
 
   const root = useMemo(() => document.body, []);
+  const normalizedQuery = normalizeText(query);
+  const results = useMemo(() => {
+    if (!normalizedQuery) return [];
+
+    return findMatches(normalizedQuery, root);
+  }, [normalizedQuery, root]);
+
+  function scrollToResult(item) {
+    const el = item.node;
+    if (!el || !el.scrollIntoView) return;
+
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.add('searchbar__flash');
+    window.setTimeout(() => el.classList.remove('searchbar__flash'), 900);
+  }
 
   useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      setActiveIndex(0);
-      return;
-    }
+    const handlePointerDown = (event) => {
+      if (!containerRef.current?.contains(event.target)) {
+        setIsMobileOpen(false);
+      }
+    };
 
-    const found = findMatches(query, root, containerRef.current);
-    setResults(found);
-    setActiveIndex(0);
-  }, [query, root]);
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('touchstart', handlePointerDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('touchstart', handlePointerDown);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobileOpen) {
+      inputRef.current?.focus();
+    }
+  }, [isMobileOpen]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -127,7 +152,8 @@ export const SearchBar = () => {
       }
       if (event.key === 'Escape') {
         setQuery('');
-        setResults([]);
+        setActiveIndex(0);
+        setIsMobileOpen(false);
       }
     };
 
@@ -135,50 +161,76 @@ export const SearchBar = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [results, activeIndex]);
 
-  const scrollToResult = (item) => {
-    const el = item.node;
-    if (!el || !el.scrollIntoView) return;
-
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    el.classList.add('searchbar__flash');
-    window.setTimeout(() => el.classList.remove('searchbar__flash'), 900);
-  };
-
   const handleResultClick = (result) => {
     scrollToResult(result);
+    setIsMobileOpen(false);
     inputRef.current?.focus();
   };
 
   return (
-    <div className="searchbar" ref={containerRef}>
-      <input
-        ref={inputRef}
-        className="searchbar__input"
-        placeholder="Search this page..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        aria-label="Search this page"
-      />
+    <div
+      className={`searchbar ${isMobileOpen ? 'searchbar--mobile-open' : ''}`}
+      ref={containerRef}
+    >
+      <button
+        type="button"
+        className="searchbar__toggle"
+        onClick={() => {
+          setIsMobileOpen((prev) => !prev);
+          setActiveIndex(0);
+        }}
+        aria-label={isMobileOpen ? 'Close search' : 'Open search'}
+        aria-expanded={isMobileOpen}
+      >
+        <svg
+          className="searchbar__toggle-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2" />
+          <path
+            d="M16 16L21 21"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      </button>
 
-      {query.trim() && (
-        <ul className="searchbar__results">
-          {results.length === 0 ? (
-            <li className="searchbar__no-results">No matches found</li>
-          ) : (
-            results.map((result, index) => (
-              <li
-                key={`${result.text}-${index}`}
-                className={`searchbar__item ${index === activeIndex ? 'searchbar__item-active' : ''}`}
-                onClick={() => handleResultClick(result)}
-              >
-                <div className="searchbar__item-snippet">
-                  {makeSnippet(result.text, result.matchIndex, query)}
-                </div>
-              </li>
-            ))
-          )}
-        </ul>
-      )}
+      <div className="searchbar__panel">
+        <input
+          ref={inputRef}
+          className="searchbar__input"
+          placeholder="Search this page..."
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setActiveIndex(0);
+          }}
+          aria-label="Search this page"
+        />
+
+        {query.trim() && (
+          <ul className="searchbar__results">
+            {results.length === 0 ? (
+              <li className="searchbar__no-results">No matches found</li>
+            ) : (
+              results.map((result, index) => (
+                <li
+                  key={`${result.text}-${index}`}
+                  className={`searchbar__item ${index === activeIndex ? 'searchbar__item-active' : ''}`}
+                  onClick={() => handleResultClick(result)}
+                >
+                  <div className="searchbar__item-snippet">
+                    {makeSnippet(result.text, result.matchIndex, query)}
+                  </div>
+                </li>
+              ))
+            )}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };

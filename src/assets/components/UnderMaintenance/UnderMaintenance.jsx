@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAsyncValue, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const UnderMaintenance = () => {
   const navigate = useNavigate();

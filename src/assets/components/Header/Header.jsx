@@ -32,9 +32,9 @@ export const Header = () => {
           >
             Projects
           </NavLink>
-        </div>
 
-        <SearchBar />
+          <SearchBar />
+        </div>
 
         <div className="header__links">
           <div className="link">

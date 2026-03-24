@@ -100,7 +100,7 @@ export const Hero = () => {
           </aside>
 
           <div className="hero-dev">
-            <div className="hero-dev-container">
+            <div className="hero-dev__container">
               <div className="hero-dev__header">
                 <p className="hero-dev__header-element">{'<h1>'}</p>
                 <div className="hero-dev__header-content">

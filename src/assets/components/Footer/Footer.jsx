@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <>
       <div className="footer__line"></div>
-      <footer className="footer" id="contact">
+      <footer className="footer">
         <h4 className="footer-copyright">
           &copy; MarcoRamirez. All rights reserved.
         </h4>
