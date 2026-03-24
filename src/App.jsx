@@ -2,6 +2,8 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 
 import { Header } from './assets/components/Header/Header';
 import { Footer } from './assets/components/Footer/Footer';
+import { UnderMaintenance } from './assets/components/UnderMaintenance/UnderMaintenance';
+
 import { Main } from './assets/pages/Main/Main';
 import { Privacy } from './assets/pages/Privacy/Privacy';
 import { Terms } from './assets/pages/Terms/Terms';
@@ -31,6 +33,10 @@ function App() {
 
         <Route element={<Layout />}>
           <Route path="/terms" element={<Terms />} />
+        </Route>
+
+        <Route element={<Layout />}>
+          <Route path="/projects" element={<UnderMaintenance />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
