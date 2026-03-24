@@ -10,7 +10,7 @@ export const Terms = () => {
           <p className="terms__paragraph">Last updated: 03/19/2026</p>
         </div>
         <div className="terms__content">
-          <h2 className="terms__subtitle">1.- Acceptance of Terms</h2>
+          <h2 className="terms__subtitle">1. Acceptance of Terms</h2>
           <p className="terms__paragraph">
             By accessing and using this website, you agree to be bound by these
             Terms and Conditions. If you do not agree with any part of these

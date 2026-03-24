@@ -9,6 +9,7 @@
 
 @import url('./assets/pages/Privacy/Privacy.css');
 @import url('./assets/pages/Terms/Terms.css');
+@import url('./assets/pages/NoFound/NotFound.css');
 
 main {
   position: relative;
