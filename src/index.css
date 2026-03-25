@@ -516,7 +516,6 @@ html::-webkit-scrollbar-thumb:hover {
   .hero-highlights {
     width: 215px;
     height: 378px;
-    /* margin: 0 auto; */
     flex-direction: column;
     align-items: center;
     padding: 48px 32px;
