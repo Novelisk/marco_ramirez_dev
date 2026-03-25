@@ -11,8 +11,9 @@ export const Contact = () => {
   const formRef = useRef();
   const [status, setStatus] = useState('idle');
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setStatus('loading');
 
     emailjs
       .sendForm(
@@ -22,7 +23,7 @@ export const Contact = () => {
         'HZjGJr2qdAFCzHQVI',
       )
       .then(() => {
-        setStatus('Success');
+        setStatus('success');
         formRef.current.reset();
 
         setTimeout(() => setStatus('idle'), 3000);
@@ -59,7 +60,7 @@ export const Contact = () => {
 
           <form
             ref={formRef}
-            onSubmit={sendEmail}
+            onSubmit={handleSubmit}
             className="contact__content-form"
           >
             <div className="contact__form-header">

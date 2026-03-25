@@ -28,8 +28,12 @@
 }
 
 .hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
   width: 320px;
-  height: 475px;
+  height: 520px;
   padding: 24px 24px;
   margin-left: 128px;
   border: 4px solid #fff;
@@ -147,8 +151,7 @@
 }
 
 .hero-info__download {
-  margin-top: 32px;
-  width: auto;
+  width: 227px;
   height: auto;
   padding: 16px 32px;
   background-color: #fff;
@@ -156,6 +159,7 @@
   gap: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   transition: transform 0.2s ease;
 }
@@ -313,6 +317,8 @@
 }
 
 .hero-highlights__container {
+  width: 151px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;

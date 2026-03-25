@@ -487,7 +487,7 @@ html::-webkit-scrollbar-thumb:hover {
 
   .hero-info {
     padding: 20px;
-    border-radius: 48px 0 48px 0;
+    border-radius: 150px 0 150px 0;
   }
 
   .hero-info__name,
@@ -628,7 +628,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
 
   .footer {
-    padding: 0 20px 32px;
+    padding: 0 20px 18px;
+    margin-bottom: 0;
   }
 
   .footer__line {
@@ -645,4 +646,9 @@ html::-webkit-scrollbar-thumb:hover {
   .nav-bar {
     display: none;
   }
+}
+
+.terms,
+.privacy {
+  padding: 0 20px;
 }

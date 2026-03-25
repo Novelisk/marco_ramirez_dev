@@ -129,15 +129,59 @@
   color: transparent;
 }
 
+.contact__form-input:-webkit-autofill,
+.contact__form-input:-webkit-autofill:hover,
+.contact__form-input:-webkit-autofill:focus,
+.contact__form-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .contact__form-submit {
+  height: 56px;
   margin: auto;
   padding: 16px 32px;
   gap: 16px;
   border-radius: 32px;
   background-color: #12f7d6;
+  border: none;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+}
+
+.contact__form-submit:hover {
+  transform: scale(0.97);
+}
+
+.contact__form-submit:active {
+  transform: scale(0.94);
+}
+
+.contact__form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact__form-submit.success {
+  background-color: #4caf50;
+}
+
+.contact__form-submit.success span {
+  color: #fff;
+}
+
+.contact__form-submit.error {
+  background-color: #ff4d4f;
+}
+
+.contact__form-submit.error span {
+  color: #fff;
 }
 
 .contact__form-submit-span {
@@ -152,4 +196,20 @@
 .contact__form-cross-icon {
   width: 24px;
   height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.contact__form-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(41, 47, 54, 0.2);
+  border-top: 3px solid #292f36;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
