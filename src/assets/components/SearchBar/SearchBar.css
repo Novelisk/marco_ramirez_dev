@@ -117,10 +117,9 @@
 
 @media (max-width: 767px) {
   .searchbar {
-    width: auto;
-    min-width: auto;
     padding: 0;
     align-items: center;
+    display: contents;
   }
 
   .searchbar__toggle {
@@ -130,16 +129,17 @@
   }
 
   .searchbar__panel {
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
+    position: relative;
+    width: 100%;
+
     display: none;
-    width: min(320px, calc(100vw - 40px));
-    max-width: 320px;
     opacity: 0;
-    transform: translateY(-8px) scale(0.98);
-    transform-origin: top center;
+
+    transform: translateY(-8px);
+    transform-origin: top;
     z-index: 10;
+
+    order: 2;
   }
 
   .searchbar--mobile-open .searchbar__panel {

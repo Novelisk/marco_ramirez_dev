@@ -46,6 +46,7 @@
 }
 
 .about-content__about-me_text {
+  text-align: center;
   font-family: 'Ubuntu', system-ui, Helvetica, Arial, sans-serif;
   font-size: 64px;
   line-height: 1.1;

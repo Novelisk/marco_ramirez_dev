@@ -75,7 +75,7 @@ export const Footer = () => {
         <h4 className="footer-contact">
           Contact me at:{' '}
           <a
-            href="mailto:marco@email.com?subject=Project%20Inquiry"
+            href="mailto:novelisk@ik.me?subject=Project%20Inquiry"
             className="footer-contact__mail-to"
           >
             <span className="footer-contact__span">novelisk@ik.me</span>

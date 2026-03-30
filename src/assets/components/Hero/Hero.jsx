@@ -61,9 +61,7 @@ export const Hero = () => {
                       alt="Embed link icon"
                       className="hero-info__mid-icon"
                     />
-                    <p className="hero-info__mid-text">
-                      www.marcoramirezdev.com
-                    </p>
+                    <p className="hero-info__mid-text">www.novelisk.dev</p>
                   </div>
 
                   <div className="hero-info__mid-footer">
@@ -128,7 +126,7 @@ export const Hero = () => {
                 </div>
                 <p className="hero-dev__footer-element">{'<p>'}</p>
                 <a
-                  href="mailto:marco@email.com?subject=Project%20Inquiry"
+                  href="mailto:novelisk@ik.me?subject=Project%20Inquiry"
                   className="hero-dev__contact"
                 >
                   <h2 className="hero-dev__contact-text">
