@@ -3,6 +3,7 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import { Header } from './assets/components/Header/Header';
 import { Footer } from './assets/components/Footer/Footer';
 import { UnderMaintenance } from './assets/components/UnderMaintenance/UnderMaintenance';
+import { Projects } from './assets/components/Projects/Projects';
 
 import { Main } from './assets/pages/Main/Main';
 import { Privacy } from './assets/pages/Privacy/Privacy';
@@ -36,7 +37,8 @@ function App() {
         </Route>
 
         <Route element={<Layout />}>
-          <Route path="/projects" element={<UnderMaintenance />} />
+          {/* <Route path="/projects" element={<UnderMaintenance />} /> */}
+          <Route path="/projects" element={<Projects />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
