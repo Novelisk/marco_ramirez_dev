@@ -19,10 +19,10 @@ export const projectsData = [
       'TheMealDB API',
       'Celebrate/Joi',
     ],
-    live: 'https://cookify-black.vercel.app/signin',
+    live: 'https://cookify-black.vercel.app/',
     repo: 'https://github.com/Novelisk/cookify',
     image:
-      'https://www.vitakraft.com/fileadmin/_processed_/1/3/csm_el_origen_del_perro_3cc21c0da1.jpg',
+      'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/Cookify.png',
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const projectsData = [
     type: 'Frontend',
     status: 'Deploy Pending',
     description:
-      'A promotionam website for a professional recording studio focused on brand presecen, studio presentation, and booking inquiries.',
+      'A promotional website for a professional recording studio focused on brand presecen, studio presentation, and booking inquiries.',
     challenge:
       'To create a more ngaging and intuitive website to better promote the studio and provide a clear way for visitors to request lockout bookings',
     solution:
@@ -39,7 +39,8 @@ export const projectsData = [
     live: '',
     repo: 'https://github.com/Novelisk/recon-studio',
     image:
-      'https://www.vitakraft.com/fileadmin/_processed_/1/3/csm_el_origen_del_perro_3cc21c0da1.jpg',
+      // 'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc1.png?tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/REC-ON.png',
   },
   {
     id: 3,
@@ -56,6 +57,6 @@ export const projectsData = [
     live: '',
     repo: 'https://github.com/Novelisk/paola-webpage',
     image:
-      'https://www.vitakraft.com/fileadmin/_processed_/1/3/csm_el_origen_del_perro_3cc21c0da1.jpg',
+      'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/construction-image.png?updatedAt=1774375694279&tr=w-1200,q-75,f-webp',
   },
 ];
