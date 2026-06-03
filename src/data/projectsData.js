@@ -39,8 +39,7 @@ export const projectsData = [
     live: '',
     repo: 'https://github.com/Novelisk/recon-studio',
     image:
-      // 'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc1.png?tr=w-1200,q-75,f-webp',
-      'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/REC-ON.png',
+      'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/REC-ON.png?q-75,f-webp',
   },
   {
     id: 3,

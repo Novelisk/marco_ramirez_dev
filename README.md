@@ -24,7 +24,7 @@ Built with **React** + **Vite** and deployed with a custom domain.
 
 ## Deploy
 
-Deployed on Hostinger with custom domain novelisk.dev
+Deployed on Hostinger with custom domain [novelisk.dev](https://www.novelisk.dev)
 
 ## License
 
