@@ -1,16 +1,31 @@
-# React + Vite
+# novelisk.dev - Marco Ramírez - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portolio website for **Marco Ramírez**, Full-Stack Developer.
+Built with **React** + **Vite** and deployed with a custom domain.
 
-Currently, two official plugins are available:
+**Live:** [novelisk.dev](https://www.novelisk.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack:
 
-## React Compiler
+- **React 19** + **Vite 7**
+- **React Router DOM** - client-side routing
+- **EmailJS** - contact form withot backend
+- **Pure CSS** - no frameworks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features:
 
-## Expanding the ESLint configuration
+- **Hero Section** - introduction with stats (languages, tools, frameworks)
+- **About Section** - personal bio and background
+- **Skills Section** - Frontend (HTML, CSS, JS, REACT) & Backend (Node.js, Express.js, MongoDB)
+- **Projects Section** - showcase of live projects _(in Progress)_
+- **Contact Form** powered by EmailJS - no backend required
+- **Fully responsive design** - mobie, tablet and desktop
+- **Client-side routing** with React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy
+
+Deployed on Hostinger with custom domain novelisk.dev
+
+## License
+
+All Rights Reserved © Marco Ramírez

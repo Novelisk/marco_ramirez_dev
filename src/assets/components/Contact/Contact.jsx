@@ -17,10 +17,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_03i9j9g',
-        'template_om99dm9',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        'HZjGJr2qdAFCzHQVI',
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(() => {
         setStatus('success');
