@@ -47,8 +47,7 @@ const findMatches = (query, root) => {
         const parent = node.parentElement;
         if (!parent) return NodeFilter.FILTER_REJECT;
 
-        if (parent.closest('.searchbar'))
-          return NodeFilter.FILTER_REJECT;
+        if (parent.closest('.searchbar')) return NodeFilter.FILTER_REJECT;
         if (
           parent.matches &&
           parent.matches('script, style, noscript, [aria-hidden="true"]')
@@ -114,6 +113,8 @@ export const SearchBar = () => {
     const handlePointerDown = (event) => {
       if (!containerRef.current?.contains(event.target)) {
         setIsMobileOpen(false);
+        setQuery('');
+        setActiveIndex(0);
       }
     };
 
@@ -188,7 +189,13 @@ export const SearchBar = () => {
           fill="none"
           aria-hidden="true"
         >
-          <circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2" />
+          <circle
+            cx="11"
+            cy="11"
+            r="6.5"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
           <path
             d="M16 16L21 21"
             stroke="currentColor"

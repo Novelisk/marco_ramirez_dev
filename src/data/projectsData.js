@@ -28,7 +28,7 @@ export const projectsData = [
     id: 2,
     title: 'REC-On Studio',
     type: 'Frontend',
-    status: 'Deploy Pending',
+    status: 'Live',
     description:
       'A promotional website for a professional recording studio focused on brand presecen, studio presentation, and booking inquiries.',
     challenge:
@@ -36,7 +36,7 @@ export const projectsData = [
     solution:
       'I designed and developed the site from scratch, including an about section, services section with gallery, testimonials, and a contact form. I also produced the photography used throughout the website, combining development and visual creation into one cohesive experience.',
     stack: ['React', 'CSS', 'EmailJS', 'ImageKit'],
-    live: '',
+    live: 'https://reconstudio.com.mx',
     repo: 'https://github.com/Novelisk/recon-studio',
     image:
       'https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/REC-ON.png?q-75,f-webp',

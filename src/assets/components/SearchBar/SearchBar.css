@@ -34,7 +34,8 @@
 .searchbar__panel {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
+  position: relative;
 }
 
 .searchbar--mobile-open .searchbar__toggle {
@@ -64,6 +65,12 @@
 }
 
 .searchbar__results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 100;
+
   max-height: 220px;
   overflow-y: auto;
   border-radius: 12px;
@@ -73,6 +80,23 @@
   padding: 8px 0;
   margin: 0;
   list-style: none;
+}
+
+.searchbar__results::-webkit-scrollbar {
+  width: 12px;
+}
+
+.searchbar__results::-webkit-scrollbar-track {
+  background: #1a1e23;
+}
+
+.searchbar__results::-webkit-scrollbar-thumb {
+  background: #12f7d6;
+  border-radius: 6px;
+}
+
+.searchbar__results::-webkit-scrollbar-thumb:hover {
+  background: #98faec;
 }
 
 .searchbar__item {
